@@ -1,0 +1,33 @@
+body {
+  background-color: #777;
+}
+button.accordion {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  margin: 4px 0;
+}
+button:hover {
+  background-color: grey;
+}
+button.accordion.active {
+  background-color: grey;
+  color: #fff;
+  border-radius: 4px 4px 0 0;
+}
+div.panel {
+  background: white;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+}
+div.panel.show {
+  opacity: 1;
+  max-height: 500px;
+}
